@@ -11,7 +11,7 @@ Inspired by one of the [best visualizations of 2018](https://qz.com/1513260/the-
 
 
 ## Research
-Initially, we were curious to investigate immigration trends by continent and, potentially, by country. However, the level of detail by both continent and country trickled off going back further than [two decades](https://www.dhs.gov/immigration-statistics/yearbook/1996_1999) and if data was available, it was only available by decade.
+Initially, we were curious to investigate immigration trends by continent and, potentially, by country. However, the level of detail by both continent and country became inconsistent when going back further than [two decades](https://www.dhs.gov/immigration-statistics/yearbook/1996_1999) and if data was available, it was only available by decade.
 
 
 ## Dataset
@@ -63,7 +63,7 @@ Once we got the time series to our targeted stationarity, we plotted the autocor
 
 In an ARIMA model, there are three distinct integer values, (p, d, q).
 
-p= allows us to incorporate the effect of past values into our model. This would be similar to stating that immigration in this year will be similar to the past couple of years.
+p= the number of autoregressive terms; allows us to incorporate the effect of past values into our model. This would be similar to stating that immigration in this year will be similar to the past couple of years.
 
 d = the number of differences; identifies the number of lag values to subtract from the current observation. This would be similar to stating that immigration in this year will be similar to the past couple of years if the difference in the amount of immigration in the last n years is small.
 
@@ -95,7 +95,7 @@ Following the validation of our model, we forecasted immigration for the next 20
 
 Lastly, we introduced an exogenous variable, GDP, to perform a multivariate analysis on immigration. We used [VAR](https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/) to add the GDP variable. 
 
-In contrast to our first model, our multivariate model using GDP predicted that immigration would actually increase. However, the validation metrics for our second model's immigration's population percentage were worse than our univariate model, so we had more faith in the forecasting performed by our ARIMA model.
+In contrast to our first model, our multivariate model using GDP predicted that immigration would actually increase. However, the validation metrics for our second model's immigration's population percentage were worse than our univariate model, so we had more confidence in the forecasting performed by our ARIMA model.
 
 <p align="center">
   <img width="700" alt="11" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/gdp.png">
