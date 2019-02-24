@@ -25,13 +25,13 @@ Since we wanted to perform an analysis looking at a wide time range, we decided 
 ## Stationarity
 Prior to building a model, we needed to stationarize our data. We performed the [Dickey-Fuller Test](https://en.wikipedia.org/wiki/Dickey%E2%80%93Fuller_test) (DF test) on the immigration time series to see how stationary our data was to begin with. Upon running the DF test, we saw that our data was not stationary enough to proceed with modeling since our Critical Value of -2.88 was less than our Test Statistic of -1.04.
 
-<p align="left">
-  <img width="600" alt="2" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_num_by_year_RM_SD.png">
-</p>
 
-<p align="right">
-  <img width="200" alt="3" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_num_by_year_DF1.PNG">
-</p>
+  <img width="600" alt="2" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_num_by_year_RM_SD.png">
+
+
+
+  <img width="300" alt="3" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_num_by_year_DF1.PNG">
+
 
 
 ## Correlation / Autocorrelation
