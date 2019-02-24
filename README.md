@@ -50,7 +50,7 @@ We also checked the stationarity of our time series when the total immigration n
   <img width="800" alt="6" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_perc_by_year.png">
 </p>
 <p align="center">
-  <img width="400" alt="7" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_perc_by_year_DF.png">
+  <img width="400" alt="7" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_perc_by_year_DF.PNG">
 </p>
 
 
@@ -71,25 +71,36 @@ q = Number of MA (Moving Average) terms; sets the error of the model as a linear
 
 
 ## SARIMAX
-To find the best p, d, and q terms for our ARIMA model, we ran a STATSMODELS' SARIMAX to optimize for the lowest [Akaike Information Criterion](https://en.wikipedia.org/wiki/Akaike_information_criterion) values.
+To find the best p, d, and q terms for our ARIMA model, we ran a STATSMODELS' SARIMAX to optimize for the lowest [Akaike Information Criterion](https://www.statisticshowto.datasciencecentral.com/akaikes-information-criterion/) values.
 
+The best p, d, q parameters for an ARIMA model based on Immigration as a percentage of population was 1, 0, and 0, respectively. 
 
-
-These three distinct integer values, (p, d, q), are used to parametrize ARIMA models. Because of that, ARIMA models are denoted with the notation ARIMA(p, d, q)
-The next step was 
-
-The next step is to determine the tuning parameters of the model by looking at the autocorrelation and partial autocorrelation graphs. There are many rules and best practices about how to select the appropriate AR, MA, SAR, and MAR terms for the model. The big issue as with all models is that you don’t want to overfit your model to the data by using too many terms.
 
 ## ARIMA Model Validation
- forecasts at each point are generated using the full history up to that point.
+In order to validate our model, we had the ARIMA model predict immigration numbers (as a percentage of population) from 2010 till 2017  using one-step ahead forecasts, meaning that forecasts at each year (2010-2017) are generated using the full history up to that point. We then calculated how much our model's predictions deviated from the true numbers by using MAPE. The forecasts deviated just 5.01% from the true values. Root Mean Squared Error (RMSE) was a less representative deviation measurement for our data because the population percentage numbers were so small, that the RMSE was 0.0.
+
+<p align="center">
+  <img width="800" alt="9" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/validate_arima.png">
+</p>
 
 
 ## Forecasting Immigration 2018 - 2038
-- for next 20 years
+Following the validation of our model, we forecasted immigration for the next 20 years. According to our model, immigration as a percentage of U.S. population will be declining slightly. 
 
+<p align="center">
+  <img width="800" alt="10" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/forecast_2038.png">
+</p>
 
 ## Multivariate Analysis
 
-introducedexogenous variable and performed a multivariate analysis
-● Performed further multivariate analysis using  to include GDP as variable to predict immigration
+Lastly, we introduced an exogenous variable, GDP, to perform a multivariate analysis on immigration. We used [VAR](https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/)to add an additional variable. 
 
+In contrast to our first model, our multivariate model using GDP predicted that immigration would actually increase. However, the validation metrics for our second model were worse than our univariate model, so we had more faith in the forecasting performed by our ARIMA model.
+
+<p align="center">
+  <img width="800" alt="11" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/gdp.png">
+</p>
+
+<p align="center">
+  <img width="400" alt="12" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/mape.png">
+</p>
