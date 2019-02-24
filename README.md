@@ -77,7 +77,7 @@ The best p, d, q parameters for an ARIMA model based on Immigration as a percent
 
 
 ## ARIMA Model Validation
-In order to validate our model, we had the ARIMA model predict immigration numbers (as a percentage of population) from 2010 till 2017  using one-step ahead forecasts, meaning that forecasts at each year (2010-2017) are generated using the full history up to that point. We then calculated how much our model's predictions deviated from the true numbers by using MAPE. The forecasts deviated just 5.01% from the true values. Root Mean Squared Error (RMSE) was a less representative deviation measurement for our data because the population percentage numbers were so small, that the RMSE was 0.0.
+To validate our model, we had the ARIMA model predict immigration numbers (as a percentage of population) from 2010 till 2017  using one-step ahead forecasts, meaning that forecasts at each year (2010-2017) are generated using the full history up to that point. We then calculated how much our model's predictions deviated from the true numbers by using MAPE. The forecasts deviated just 5.01% from the true values. Root Mean Squared Error (RMSE) was a less representative deviation measurement for our data because the population percentage numbers were so small, that the RMSE was 0.0.
 
 <p align="center">
   <img width="800" alt="9" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/validate_arima.png">
@@ -93,9 +93,9 @@ Following the validation of our model, we forecasted immigration for the next 20
 
 ## Multivariate Analysis
 
-Lastly, we introduced an exogenous variable, GDP, to perform a multivariate analysis on immigration. We used [VAR](https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/)to add an additional variable. 
+Lastly, we introduced an exogenous variable, GDP, to perform a multivariate analysis on immigration. We used [VAR](https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/) to add the GDP variable. 
 
-In contrast to our first model, our multivariate model using GDP predicted that immigration would actually increase. However, the validation metrics for our second model were worse than our univariate model, so we had more faith in the forecasting performed by our ARIMA model.
+In contrast to our first model, our multivariate model using GDP predicted that immigration would actually increase. However, the validation metrics for our second model's immigration's population percentage were worse than our univariate model, so we had more faith in the forecasting performed by our ARIMA model.
 
 <p align="center">
   <img width="700" alt="11" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/gdp.png">
