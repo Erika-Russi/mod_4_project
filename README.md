@@ -3,7 +3,7 @@
 ## Abstract
 [Slides](https://docs.google.com/presentation/d/1Dd_srSt6hCC0VHzBVQKHEnJWmmlDE71OH07LxB9ks0o/edit#slide=id.p)
 
-We built a Time Series ARIMA model with SARIMAX to predict immigration as a percentage of U.S. population through 2038, using immigration data from 1820-2017. We validated our model by using one-step ahead forecasting, resulting in a Mean Absolute Percentage Error (MAPE) of 5.01%. We also created a separate model that added GDP as second variable to predict immigration with Vector Autoregression (VAR).
+We built a Time Series ARIMA model with SARIMAX to predict immigration as a percentage of U.S. population through 2038, using immigration data from 1820-2017. We validated our model by using one-step ahead forecasting, resulting in a Mean Absolute Percentage Error (MAPE) of 5.01%. We also created a separate model that added GDP as the second variable to predict immigration with Vector Autoregression (VAR).
 
 
 ## Motivation
@@ -19,7 +19,7 @@ Since we wanted to perform an analysis looking at a wide time range, we decided 
 
 INSERT GRAPH
 <p align="center">
-  <img width="537" alt="screen shot 2017-07-06 at 1 38 22 pm" src="https://user-images.githubusercontent.com/25883937/27927287-e2cce290-6250-11e7-85b4-b5c2ae634d52.png">
+  <img width="1000" alt="1" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_num_by_year.png">
 </p>
 
 
