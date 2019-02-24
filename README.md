@@ -30,7 +30,7 @@ Prior to building a model, we needed to stationarize our data. We performed the 
 
 
 
-  <img width="300" alt="3" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_num_by_year_DF1.PNG">
+  <img width="100" alt="3" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/imm_num_by_year_DF1.PNG">
 
 
 
