@@ -98,9 +98,13 @@ Lastly, we introduced an exogenous variable, GDP, to perform a multivariate anal
 In contrast to our first model, our multivariate model using GDP predicted that immigration would actually increase. However, the validation metrics for our second model were worse than our univariate model, so we had more faith in the forecasting performed by our ARIMA model.
 
 <p align="center">
-  <img width="800" alt="11" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/gdp.png">
+  <img width="700" alt="11" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/gdp.png">
 </p>
 
 <p align="center">
-  <img width="400" alt="12" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/mape.png">
+  <img width="500" alt="12" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/rmse.png">
+</p>
+
+<p align="center">
+  <img width="500" alt="13" src="https://github.com/Erika-Russi/mod_4_project/blob/master/images/mape.png">
 </p>
